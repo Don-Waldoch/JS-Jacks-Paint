@@ -20,16 +20,12 @@ function configureListeners() {
 }
 
 function addOpacity(e) {
-    if (!this.classList.contains('dim')) {
-        this.classList.add('dim');
-    }
+    if (!this.classList.contains('dim')) this.classList.add('dim');
     putProductInfo(this.id);
 }
 
 function removeOpacity(e) {
-    if (this.classList.contains('dim')) {
-        this.classList.remove('dim');
-    }
+    if (this.classList.contains('dim')) this.classList.remove('dim');
     putProductInfo('');
 }
 
